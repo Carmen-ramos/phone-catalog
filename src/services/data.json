@@ -1,23 +1,12 @@
 
 [
-    {
-    "id":0,
-    "name":"Iphone 7",
-    "manufacturer":"Apple",
-    "description": "lorem ipsum dolor sit amet",
-    "color":"black",
-    "price":769,
-    "image":"/images/iphone.png",
-    "screen":"4,7 inch IPS",
-    "processor": "A10 Fusion",
-    "ram":2
-},
+   
 {
     "id":1,
     "name":"Samsung Galaxy 10",
     "manufacturer":"Samsung",
     "description": "lorem ipsum dolor sit amet",
-    "color":"white",
+    "color":"White",
     "price":800,
     "image":"/images/iphone.png",
     "screen":"4,7 inch IPS",
@@ -25,11 +14,12 @@
     "ram":2
 },
 {
-    "id":2,
+    "id":3,
     "name":"Iphone 7",
     "manufacturer":"Apple",
     "description": "lorem ipsum dolor sit amet",
-    "color":"black",
+    "color":"Black",
+    "color":"Black",
     "price":769,
     "image":"/images/iphone.png",
     "screen":"4,7 inch IPS",
@@ -37,49 +27,25 @@
     "ram":2
 },
 {
-    "id":0,
-    "name":"Iphone 7",
+    "id":4,
+    "name":"Oppo",
     "manufacturer":"Apple",
     "description": "lorem ipsum dolor sit amet",
-    "color":"white",
+    "color":"White",
     "price":769,
-    "image":"/images/iphone.png",
+    "image":"/images/oppo.jpg",
     "screen":"4,7 inch IPS",
     "processor": "A10 Fusion",
     "ram":2
 },
 {
-    "id":0,
-    "name":"Iphone 7",
+    "id":5,
+    "name":"Huawei Nota 7",
     "manufacturer":"Apple",
     "description": "lorem ipsum dolor sit amet",
-    "color":"black",
+    "color":"Red",
     "price":769,
-    "image":"/images/iphone.png",
-    "screen":"4,7 inch IPS",
-    "processor": "A10 Fusion",
-    "ram":2
-},
-{
-    "id":0,
-    "name":"Iphone 7",
-    "manufacturer":"Apple",
-    "description": "lorem ipsum dolor sit amet",
-    "color":"black",
-    "price":769,
-    "image":"/images/iphone.png",
-    "screen":"4,7 inch IPS",
-    "processor": "A10 Fusion",
-    "ram":2
-},
-{
-    "id":0,
-    "name":"Iphone 7",
-    "manufacturer":"Apple",
-    "description": "lorem ipsum dolor sit amet",
-    "color":"black",
-    "price":769,
-    "image":"/images/iphone.png",
+    "image":"/images/red.jpg",
     "screen":"4,7 inch IPS",
     "processor": "A10 Fusion",
     "ram":2

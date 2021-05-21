@@ -2,7 +2,7 @@ import React from "react";
 import Phone from "./Phone.js";
 
 function PhoneList(props) {
-  const phoneItem = props.data.map((item) => {
+  const phoneItem = props.phones.map((item) => {
     return (
       <li key={item.id}>
         <Phone item={item} />
@@ -10,7 +10,7 @@ function PhoneList(props) {
     );
   });
 
-  return <ul className="pokeCard">{phoneItem}</ul>;
+  return <ul className="">{phoneItem}</ul>;
 }
 
 export default PhoneList;
