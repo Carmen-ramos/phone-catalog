@@ -12,7 +12,7 @@ function FilterByName(props) {
       id="name"
       className="main__form--inputText stylelabel"
     >
-      Search:
+      Search:{" "}
       <input
         className="input"
         type="text"

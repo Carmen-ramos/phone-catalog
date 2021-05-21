@@ -6,6 +6,7 @@ import PhoneInformation from "./PhoneInformation";
 import Filters from "./Filters";
 import Footer from "./Footer";
 import Header from "./Header";
+import "../stylesheets/Main.scss";
 
 function App() {
   const [phones, setPhones] = useState(data);
@@ -45,19 +46,20 @@ function App() {
   return (
     <div>
       <Header />
-      <Filters
-        name={name}
-        color={color}
-        handleFilter={handleFilter}
-        resetButton={resetButton}
-      />
-      <Switch>
-        <Route exact path="/">
-          <PhoneList phones={filterPhones} name={name} />
-        </Route>
-        <Route path="/phone/:id" render={renderInformation} />
-      </Switch>
-
+      <main className="main">
+        <Filters
+          name={name}
+          color={color}
+          handleFilter={handleFilter}
+          resetButton={resetButton}
+        />
+        <Switch>
+          <Route exact path="/">
+            <PhoneList phones={filterPhones} name={name} />
+          </Route>
+          <Route path="/phone/:id" render={renderInformation} />
+        </Switch>
+      </main>
       <Footer />
     </div>
   );

@@ -8,7 +8,7 @@ function FilterByColor(props) {
 
   return (
     <label htmlFor="color" className="main__form--select stylelabel">
-      Color:
+      Color:{" "}
       <select
         className="block"
         name="color"
