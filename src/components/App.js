@@ -11,7 +11,7 @@ import "../stylesheets/Main.scss";
 function App() {
   const [phones, setPhones] = useState(data);
   const [name, setName] = useState("");
-  const [color, setColor] = useState("all");
+  const [color, setColor] = useState("All");
 
   //function to render phone information
   const renderInformation = (props) => {
@@ -35,12 +35,12 @@ function App() {
       return phone.name.toLowerCase().includes(name);
     })
     .filter((phone) => {
-      return color === "all" ? true : phone.color === color;
+      return color === "All" ? true : phone.color === color;
     });
 
   const resetButton = () => {
     setName("");
-    setColor("all");
+    setColor("All");
   };
 
   return (

@@ -1,35 +1,47 @@
 import { Link } from "react-router-dom";
+import "../stylesheets/PhoneInformation.scss";
 
-function PhoneInforation(props) {
+function PhoneInformation(props) {
   return (
-    <>
+    <section className="phoneInf">
       <Link to="/">
-        <p>Back</p>
+        <div className="phoneInf__container">
+          <i className="fas fa-arrow-circle-left phoneInf__container--arrow"></i>
+          <p className="phoneInf__container--back">Back</p>
+        </div>
       </Link>
-      <h2>{props.phone.name}</h2>
-      <img src={props.phone.image} alt={props.phone.name} />
-      <p>
-        Brand: <spa>{props.phone.manufacturer}</spa>
+      <h2 className="phoneInf__title">{props.phone.name}</h2>
+      <img
+        className="phoneInf__img"
+        src={props.phone.image}
+        alt={props.phone.name}
+      />
+      <p className="phoneInf__paragraph">
+        Brand:
+        <spa className="phoneInf__description">{props.phone.manufacturer}</spa>
       </p>
-      <p>
-        Description:<spa>{props.phone.description}</spa>
+      <p className="phoneInf__paragraph">
+        Description:
+        <spa className="phoneInf__description">{props.phone.description}</spa>
       </p>
-      <p>
-        Color:<spa>{props.phone.color}</spa>
+      <p className="phoneInf__paragraph">
+        Color:
+        <spa className="phoneInf__description">{props.phone.color}</spa>
       </p>
-      <p>
-        Price:<spa>{props.phone.price}</spa>
+      <p className="phoneInf__paragraph">
+        Price:<spa className="phoneInf__description">{props.phone.price}</spa>
       </p>
-      <p>
-        Screen:<spa>{props.phone.screen}</spa>
+      <p className="phoneInf__paragraph">
+        Screen:<spa className="phoneInf__description">{props.phone.screen}</spa>
       </p>
-      <p>
-        Processor:<spa>{props.phone.processor}</spa>
+      <p className="phoneInf__paragraph">
+        Processor:
+        <spa className="phoneInf__description">{props.phone.processor}</spa>
       </p>
-      <p>
-        RAM:<spa>{props.phone.ram}</spa>
+      <p className="phoneInf__paragraph">
+        RAM:<spa className="phoneInf__description">{props.phone.ram}</spa>
       </p>
-    </>
+    </section>
   );
 }
-export default PhoneInforation;
+export default PhoneInformation;

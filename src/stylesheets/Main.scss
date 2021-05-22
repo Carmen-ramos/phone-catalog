@@ -5,10 +5,6 @@
 .main {
   width: 100%;
   text-align: center;
-  //   @include tablet {
-  //     margin-right: 10%;
-  //     margin-left: 10%;
-  //   }
   //formulario
   &__form {
     padding: rem(20);
@@ -17,8 +13,6 @@
     align-items: center;
     color: $textcolor2;
     background-color: $maincolor;
-    // border: solid 0.5em $bkcolor;
-    // border-radius: 1em;
     @include tablet {
       padding: rem(40);
       flex-direction: row;
@@ -33,11 +27,10 @@
     }
 
     &--reset {
-      margin: 10px;
-      font-family: creepster;
-      margin-top: 5px;
-      padding: 5px;
-      width: 50px;
+      margin: rem(10);
+      margin-top: rem(10);
+      padding: rem(10);
+      width: rem(60);
       text-align: center;
       border-radius: 50%;
       border: rem(1) solid rgba(0, 0, 0, 0.75);
@@ -48,20 +41,19 @@
       cursor: pointer;
     }
   }
+  //list of phones
   &__container {
     background-color: $textcolor2;
-    padding: rem(10);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: rem(20);
+    display: grid;
+    justify-items: center;
     @include tablet {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: rem(20);
     }
-    // @include desktop {
-    //   grid-template-columns: repeat(3, 1fr);
-    //   margin-bottom: 20px;
-    // }
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: rem(30);
+    }
   }
 }

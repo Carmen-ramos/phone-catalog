@@ -1,0 +1,37 @@
+@import "./variables";
+@import "./function";
+@import "./mixin.scss";
+
+.phoneInf {
+  background-color: $thirdcolor;
+  color: $textcolor;
+  padding: rem(10);
+  &__container {
+    margin: rem(20);
+    display: flex;
+    flex-direction: row;
+    color: $textcolor2;
+    @include tablet {
+      justify-content: center;
+    }
+    &--back {
+      margin-left: rem(5);
+      font-weight: bold;
+    }
+  }
+  &__title {
+    margin: rem(15);
+  }
+  &__img {
+    width: rem(300);
+    margin-bottom: rem(20);
+  }
+  &__paragraph {
+    padding: rem(5);
+    font-weight: bold;
+  }
+  &__description {
+    margin-left: rem(5);
+    font-weight: lighter;
+  }
+}

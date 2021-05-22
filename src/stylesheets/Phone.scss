@@ -3,55 +3,55 @@
 @import "./mixin.scss";
 
 .phone {
-  background-color: $bkcolor;
-  margin: 10px;
-  width: 200px;
-  padding: rem(10);
-  box-shadow: 5px 5px 5px 0px rgba(26, 19, 19, 0.5);
+  background-color: $textcolor2;
+  margin: rem(20);
+  width: rem(200);
+  padding: rem(20) 0;
+  box-shadow: 5px 5px 5px 8px rgba(26, 19, 19, 0.5);
   border-radius: 5%;
-  border: solid rem(2) $bkcolor1;
-
   &:hover {
     transform: scale(1.1);
   }
-
-  &__title {
-    padding: 10px;
-    color: aqua;
-  }
-  &__img {
-    width: 120px;
-    height: 120px;
-    border-radius: 40%;
-  }
-  &__itemContainer {
-    color: aqua;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-.chacNot {
   @include tablet {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  @include desktop {
-    grid-column-start: 1;
-    grid-column-end: 5;
+    width: rem(250);
   }
   &__title {
-    font-size: 20px;
+    font-size: rem(20);
+    font-weight: bold;
+    padding: rem(10);
+    color: $textcolor;
     @include tablet {
-      font-size: 40px;
-    }
-    @include desktop {
-      font-size: 50px;
+      font-size: rem(22);
     }
   }
   &__img {
-    width: 100%;
-    border-radius: 5%;
+    width: rem(200);
+  }
+  &__container {
+    margin-top: rem(10);
+    color: $textcolor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      margin: 0 rem(10);
+      display: flex;
+      flex-direction: row;
+    }
+
+    &--price {
+      padding: rem(10);
+      width: rem(70);
+      text-align: center;
+      border-radius: 50%;
+      border: rem(1) solid rgba(0, 0, 0, 0.75);
+      background-color: $textcolor;
+      font-size: rem(20);
+      font-weight: bold;
+      color: $textcolor2;
+    }
+    &--information {
+      margin-top: rem(10);
+    }
   }
 }
