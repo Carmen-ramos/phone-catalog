@@ -10,7 +10,6 @@ function FilterByName(props) {
     <label htmlFor="name" id="name" className="main__form--input">
       Search:{" "}
       <input
-        className="input"
         type="text"
         name="name"
         value={props.name}

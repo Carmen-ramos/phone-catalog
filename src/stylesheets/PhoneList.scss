@@ -1,0 +1,26 @@
+@import "./variables";
+@import "./function";
+@import "./mixin.scss";
+
+.main {
+  &__container {
+    padding: 10px;
+    border: groove 1em grey;
+    border-radius: 2em;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: grid;
+    justify-items: center;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 20px;
+    }
+    // @include desktop2 {
+    //   grid-template-columns: repeat(4, 1fr);
+    //   margin-bottom: 20px;
+    // }
+  }
+}

@@ -4,11 +4,17 @@ import { Link } from "react-router-dom";
 function Phone(props) {
   return (
     <Link to={`/phone/${props.item.id}`}>
-      <h3 className="card__title">{props.item.name}</h3>
-      <img className="card__img" src={props.item.image} alt={props.item.name} />
-      <div>
-        <h3>{props.item.price}€</h3>
-        <span>Click for more information</span>
+      <h3 className="phone__title">{props.item.name}</h3>
+      <img
+        className="phone__img"
+        src={props.item.image}
+        alt={props.item.name}
+      />
+      <div className="phone__container">
+        <h3 className="phone__container--price">{props.item.price}€</h3>
+        <span className="phone__container--information">
+          Click for more information
+        </span>
       </div>
     </Link>
   );
