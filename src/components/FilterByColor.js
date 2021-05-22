@@ -7,7 +7,7 @@ function FilterByColor(props) {
   };
 
   return (
-    <label htmlFor="color" className="main__form--select stylelabel">
+    <label htmlFor="color" className="main__form--input">
       Color:{" "}
       <select
         className="block"
@@ -19,7 +19,7 @@ function FilterByColor(props) {
         <option value="all">All</option>
         <option value="Black">Black</option>
         <option value="White">White</option>
-        <option value="red">Red</option>
+        <option value="Red">Red</option>
       </select>
     </label>
   );

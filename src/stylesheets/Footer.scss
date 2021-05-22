@@ -1,0 +1,25 @@
+@import "./variables";
+@import "./function";
+@import "./mixin.scss";
+
+.footer {
+  color: $textcolor2;
+  border-top: 2px solid $bkcolor;
+  padding: rem(10);
+  text-align: center;
+  background-color: $textcolor;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  @include desktop {
+    padding: rem(20);
+  }
+
+  &__copyright {
+    @include tablet {
+      padding-right: rem(5);
+    }
+  }
+}

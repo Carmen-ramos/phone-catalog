@@ -3,26 +3,33 @@
 @import "./mixin.scss";
 
 .main {
-  //   margin-right: 5%;
-  //   margin-left: 5%;
-  //   text-align: center;
+  width: 100%;
+  text-align: center;
   @include tablet {
     margin-right: 10%;
     margin-left: 10%;
   }
   //formulario
   &__form {
-    padding: 20px;
+    padding: rem(20);
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: $textcolor2;
     background-color: $maincolor;
-    border: solid 0.5em $bkcolor;
-    border-radius: 1em;
+    // border: solid 0.5em $bkcolor;
+    // border-radius: 1em;
     @include tablet {
+      padding: rem(40);
       flex-direction: row;
       justify-content: space-around;
+    }
+    @include desktop {
+      padding: rem(30);
+      justify-content: space-evenly;
+    }
+    &--input {
+      padding: rem(10);
     }
 
     &--reset {
@@ -33,9 +40,11 @@
       width: 50px;
       text-align: center;
       border-radius: 50%;
+      border: rem(1) solid rgba(0, 0, 0, 0.75);
       background-color: $secondcolor;
-      color: $textcolor;
-      box-shadow: 5px 5px 5px 0px rgba(74, 71, 71, 0.5);
+      font-weight: bold;
+      color: $textcolor2;
+      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
       cursor: pointer;
     }
   }
