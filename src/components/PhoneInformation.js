@@ -14,7 +14,7 @@ function PhoneInformation(props) {
       <h2 className="phoneInf__title">{props.phone.name}</h2>
       <img
         className="phoneInf__img"
-        src={require(`../images/${props.phone.image}`).default}
+        src={require(`../images/catalog/${props.phone.image}`).default}
         alt={props.phone.name}
       />
       <p className="phoneInf__paragraph">

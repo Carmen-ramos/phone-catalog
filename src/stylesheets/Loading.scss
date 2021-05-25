@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./function";
+@import "./mixin.scss";
+
+.loading {
+  padding-top: rem(20);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  &__image {
+    width: rem(100);
+    @include tablet {
+      width: rem(200);
+    }
+  }
+}

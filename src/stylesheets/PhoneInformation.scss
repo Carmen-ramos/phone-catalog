@@ -3,14 +3,14 @@
 @import "./mixin.scss";
 
 .phoneInf {
-  background-color: $thirdcolor;
+  background-color: $textcolor2;
   color: $textcolor;
   padding: rem(10);
   &__container {
     margin: rem(20);
     display: flex;
     flex-direction: row;
-    color: $textcolor2;
+    color: $bkcolor1;
     @include tablet {
       justify-content: center;
     }

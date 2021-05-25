@@ -7,15 +7,19 @@ import Filters from "./Filters";
 import Footer from "./Footer";
 import Header from "./Header";
 import api from "../services/Api";
+import Loading from "./Loading";
 import "../stylesheets/Main.scss";
 
 function App() {
   const [phones, setPhones] = useState([]);
   const [name, setName] = useState("");
   const [color, setColor] = useState("All");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    api().then((data) => setPhones(data));
+    api()
+      .then((data) => setPhones(data))
+      .then(() => setLoading(false));
   }, []);
   console.log(setPhones);
 
@@ -59,6 +63,7 @@ function App() {
           handleFilter={handleFilter}
           resetButton={resetButton}
         />
+        <Loading loading={loading} />
         <Switch>
           <Route exact path="/">
             <PhoneList phones={filterPhones} name={name} />
