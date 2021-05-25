@@ -1,22 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
-import data from "../services/data.json";
+// import data from "../services/data.json";
 import PhoneList from "./PhoneList";
 import PhoneInformation from "./PhoneInformation";
 import Filters from "./Filters";
 import Footer from "./Footer";
 import Header from "./Header";
+import api from "../services/Api";
 import "../stylesheets/Main.scss";
 
 function App() {
-  const [phones, setPhones] = useState(data);
+  const [phones, setPhones] = useState([]);
   const [name, setName] = useState("");
   const [color, setColor] = useState("All");
+
+  useEffect(() => {
+    api().then((data) => setPhones(data));
+  }, []);
+  console.log(setPhones);
 
   //function to render phone information
   const renderInformation = (props) => {
     const id = parseInt(props.match.params.id);
-    const selectPhone = data.find((phone) => {
+    const selectPhone = phones.find((phone) => {
       return phone.id === id;
     });
     return <PhoneInformation phone={selectPhone} />;

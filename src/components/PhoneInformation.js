@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../stylesheets/PhoneInformation.scss";
 
 function PhoneInformation(props) {
+  console.log(props);
   return (
     <section className="phoneInf">
       <Link to="/">
@@ -13,7 +14,7 @@ function PhoneInformation(props) {
       <h2 className="phoneInf__title">{props.phone.name}</h2>
       <img
         className="phoneInf__img"
-        src={props.phone.image}
+        src={require(`../images/${props.phone.image}`).default}
         alt={props.phone.name}
       />
       <p className="phoneInf__paragraph">
