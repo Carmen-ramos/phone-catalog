@@ -1,7 +1,7 @@
 # Phone Catalog
 
 > **NOTE:**
-> It is necessary upload and start [api-catalog] (https://github.com/Carmen-ramos/phone-api) to run this project complety. All the phone information is taking from that api.
+> It is necessary download and start [phone-api] (https://github.com/Carmen-ramos/phone-api) to run this project complety. All the phone information is taking from that api.
 > This is a SPA created with React, Javascript, Sass, Jest,
 
 ### Steps to follow:
@@ -18,17 +18,15 @@
 `npm start`
 ```
 
-- Icons imported from [Fontawesome](https://fontawesome.com/)
-
 Folder structure:
 
-- Scr folder for development folders and files.
-- Components folder for javascript files.
-- Services folcer for fetch Api.
-- Styles folder scss files. Every scss file has the same name matches with a js file.
-- Test folder for testing file.
+- Scr/ for development folders and files.
+- Components/ for javascript files.
+- Services/ for fetch Api.
+- Styles/ scss files. Every scss file has the same name matches with a js file.
+- Test/ for testing file.
 
-Functionalities you can check in the aplication:
+Functionalities you can find:
 
 1. Phone list display in home page with images, name and price.
 2. Access to more phone information clicking in each phone.
@@ -38,9 +36,9 @@ Functionalities you can check in the aplication:
 About the REACT app:
 
 - Simple, clear and intuitive app.
-- Design and styles mobile first and responsive.
+- Mobile first and responsive.
 - Clean, ordered and commented code.
-- Reused styles by variables and mixins.
-- Function to conver pixels in rem.
+- Variables, mixins and fuction to transform pixel into rem.
 - Avoid the default sending of the form.
 - Save text (upper and lower case).
+- Icons imported from [Fontawesome](https://fontawesome.com/)
