@@ -1,5 +1,5 @@
 import React from "react";
-import Phone from "./Phone.js";
+import Phone from "./Phones/Phone.js";
 import "../stylesheets/Main.scss";
 import "../stylesheets/Phone.scss";
 

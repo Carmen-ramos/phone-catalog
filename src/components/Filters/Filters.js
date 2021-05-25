@@ -1,5 +1,5 @@
-import FilterByName from "./FilterByName";
-import FilterByColor from "./FilterByColor";
+import FilterByName from "./Filters/FilterByName";
+import FilterByColor from "./Filters/FilterByColor";
 import "../stylesheets/Main.scss";
 
 function Filters(props) {

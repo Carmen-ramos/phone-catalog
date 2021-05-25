@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
-// import data from "../services/data.json";
-import PhoneList from "./PhoneList";
-import PhoneInformation from "./PhoneInformation";
-import Filters from "./Filters";
+import PhoneList from "./Phones/PhoneList";
+import PhoneInformation from "./Phones/PhoneInformation";
+import Filters from "./Filters/Filters";
 import Footer from "./Footer";
 import Header from "./Header";
 import api from "../services/Api";
