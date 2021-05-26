@@ -1,5 +1,5 @@
 import loading from "../images/loading.gif";
-import "../stylesheets/Loading.scss";
+import "../stylesheets/layout/Loading.scss";
 
 const Loading = (props) => {
   if (props.loading) {

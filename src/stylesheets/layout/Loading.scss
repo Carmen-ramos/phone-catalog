@@ -1,6 +1,6 @@
-@import "./variables";
-@import "./function";
-@import "./mixin.scss";
+@import "../core/variables";
+@import "../core/function";
+@import "../core/mixin.scss";
 
 .loading {
   padding-top: rem(20);

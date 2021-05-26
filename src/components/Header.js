@@ -1,6 +1,6 @@
 import logo from "../images/soamelogo.png";
 import image from "../images/soamee.png";
-import "../stylesheets/Header.scss";
+import "../stylesheets/layout/Header.scss";
 
 function Header() {
   return (

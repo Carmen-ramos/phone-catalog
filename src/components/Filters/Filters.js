@@ -1,7 +1,7 @@
 import FilterByName from "./FilterByName";
 import FilterByColor from "./FilterByColor";
 import FilterByBrand from "./FilterByBrand";
-import "../../stylesheets/Main.scss";
+import "../../stylesheets/layout/Main.scss";
 
 function Filters(props) {
   const handleSubmit = (ev) => {

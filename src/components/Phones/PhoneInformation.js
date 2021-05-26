@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../stylesheets/PhoneInformation.scss";
+import "../../stylesheets/layout/PhoneInformation.scss";
 
 function PhoneInformation(props) {
   console.log(props);

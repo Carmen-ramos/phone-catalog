@@ -1,4 +1,4 @@
-import "../../stylesheets/Main.scss";
+import "../../stylesheets/layout/Main.scss";
 
 function FilterByBrand(props) {
   const handleChange = (e) => {

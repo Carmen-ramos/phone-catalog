@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../stylesheets/layout/Phone.scss";
 
 function Phone(props) {
   return (

@@ -1,6 +1,6 @@
-@import "./variables";
-@import "./function";
-@import "./mixin.scss";
+@import "../core/variables";
+@import "../core/function";
+@import "../core/mixin.scss";
 
 .phone {
   background-color: $textcolor2;
@@ -26,6 +26,7 @@
   }
   &__img {
     width: rem(200);
+    height: rem(200);
   }
   &__container {
     margin-top: rem(10);

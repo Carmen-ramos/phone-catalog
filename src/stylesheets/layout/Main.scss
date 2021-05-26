@@ -1,6 +1,6 @@
-@import "./variables";
-@import "./function";
-@import "./mixin.scss";
+@import "../core/variables";
+@import "../core/function";
+@import "../core/mixin.scss";
 
 .main {
   width: 100%;
@@ -64,7 +64,7 @@
 .containerCheck {
   padding: rem(5);
   display: grid;
-  justify-items: center;
+  justify-items: left;
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
   }

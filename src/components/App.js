@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import api from "../services/Api";
 import Loading from "./Loading";
-import "../stylesheets/Main.scss";
+import "../stylesheets/layout/Main.scss";
 
 function App() {
   const [phones, setPhones] = useState([]);

@@ -19,6 +19,7 @@ function FilterByColor(props) {
         <option value="Black">Black</option>
         <option value="White">White</option>
         <option value="Red">Red</option>
+        <option value="Green">Green</option>
       </select>
     </label>
   );
