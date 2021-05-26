@@ -12,6 +12,8 @@
 `npm install`
 ```
 
+It will take a few minutes.
+
 2. **Run the project** with the command:
 
 ```bash
@@ -24,7 +26,6 @@ Folder structure:
 - Components/ for javascript files.
 - Services/ for fetch Api.
 - Styles/ scss files. Every scss file has the same name matches with a js file.
-- Test/ for testing file.
 
 Functionalities you can find:
 
@@ -32,6 +33,7 @@ Functionalities you can find:
 2. Access to more phone information clicking in each phone.
 3. You can search phone by name, color and brand.
 4. Reset button to make a new searcher.
+5. "Phone not found" message when the searcher doesn't match with the phone list.
 
 About the REACT app:
 
