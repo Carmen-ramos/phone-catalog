@@ -47,4 +47,12 @@ About the REACT app:
 
 ### Desktop
 
-<img src="src/images/desktop.gif" width="400">
+<img src="src/images/desktop.gif" width="600">
+
+### Tablet
+
+<img src="src/images/tablet.gif" width="300">
+
+### Mobile
+
+<img src="src/images/mobile.gif" width="200">
