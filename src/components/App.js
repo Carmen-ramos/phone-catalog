@@ -8,6 +8,7 @@ import Header from "./Header";
 import api from "../services/Api";
 import Loading from "./Loading";
 import "../stylesheets/layout/Main.scss";
+import "../stylesheets/App.scss";
 
 function App() {
   const [phones, setPhones] = useState([]);
@@ -75,7 +76,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="App">
       <Header />
       <main className="main">
         <Filters

@@ -44,3 +44,7 @@ About the REACT app:
 - Avoid the default sending of the form.
 - Save text (upper and lower case).
 - Icons imported from [Fontawesome](https://fontawesome.com/)
+
+### Desktop
+
+<img src="src/images/desktop.gif" width="200">
