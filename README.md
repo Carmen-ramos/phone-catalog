@@ -51,8 +51,8 @@ About the REACT app:
 
 ### Tablet
 
-<img src="src/images/tablet.gif" width="300">
+<img src="src/images/tablet.gif" width="400">
 
 ### Mobile
 
-<img src="src/images/mobile.gif" width="200">
+<img src="src/images/mobilefirst.gif" width="300">
