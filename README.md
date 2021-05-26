@@ -47,4 +47,4 @@ About the REACT app:
 
 ### Desktop
 
-<img src="src/images/desktop.gif" width="200">
+<img src="src/images/desktop.gif" width="500">
