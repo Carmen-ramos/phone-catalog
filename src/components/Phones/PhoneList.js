@@ -1,4 +1,3 @@
-import React from "react";
 import Phone from "./Phone.js";
 import PhoneNotFound from "./PhoneNotFound.js";
 import "../../stylesheets/layout/Main.scss";

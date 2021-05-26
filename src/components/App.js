@@ -16,13 +16,14 @@ function App() {
   const [brand, setBrand] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  //save the api in a state and set loading while the request is happening.
   useEffect(() => {
     api()
       .then((data) => setPhones(data))
       .then(() => setLoading(false));
   }, []);
 
-  //function to render phone information
+  //function to render more phone information
   const renderInformation = (props) => {
     const id = parseInt(props.match.params.id);
     const selectPhone = phones.find((phone) => {
@@ -30,9 +31,8 @@ function App() {
     });
     return <PhoneInformation phone={selectPhone} />;
   };
-
+  // received inputdata and update usetate
   const handleFilter = (inputData) => {
-    console.log(inputData);
     if (inputData.key === "name") {
       setName(inputData.value);
     } else if (inputData.key === "color") {
@@ -40,7 +40,7 @@ function App() {
     } else if (inputData.key === "brand") {
       const indexBrand = brand.indexOf(inputData.value);
       if (indexBrand === -1) {
-        const newBrand = [...brand]; // hacemos una copia de brand para meter todas las marcas y luego esa copia la guardamos en el estado (con el spread ...) Aqui estamos metiendo en el array.
+        const newBrand = [...brand];
         newBrand.push(inputData.value);
         setBrand(newBrand);
       } else {
@@ -50,7 +50,7 @@ function App() {
       }
     }
   };
-  console.log(brand);
+  //Filter api
   const filterPhones = phones
     .filter((phone) => {
       return phone.name.toLowerCase().includes(name);
@@ -62,12 +62,13 @@ function App() {
       return brand.length === 0 ? true : brand.includes(phone.brand);
     });
 
+  //reset state
   const resetButton = () => {
     setName("");
     setColor("All");
     setBrand([]);
   };
-
+  //save the brands in a new state and nor duplicate the checkbox
   const getBrands = () => {
     const brands = phones.map((phone) => phone.brand);
     return [...new Set(brands)];

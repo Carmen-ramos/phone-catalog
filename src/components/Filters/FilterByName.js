@@ -3,7 +3,7 @@ function FilterByName(props) {
     props.handleFilter({
       key: "name",
       value: ev.target.value,
-    }); //preguntar si mejor hacerlo de la otra forma y coger el key
+    });
   };
 
   return (
