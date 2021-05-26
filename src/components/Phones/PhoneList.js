@@ -1,7 +1,7 @@
 import React from "react";
-import Phone from "./Phones/Phone.js";
-import "../stylesheets/Main.scss";
-import "../stylesheets/Phone.scss";
+import Phone from "./Phone.js";
+import "../../stylesheets/Main.scss";
+import "../../stylesheets/Phone.scss";
 
 function PhoneList(props) {
   const phoneItem = props.phones.map((item) => {

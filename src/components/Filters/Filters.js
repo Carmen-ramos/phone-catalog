@@ -1,6 +1,7 @@
-import FilterByName from "./Filters/FilterByName";
-import FilterByColor from "./Filters/FilterByColor";
-import "../stylesheets/Main.scss";
+import FilterByName from "./FilterByName";
+import FilterByColor from "./FilterByColor";
+import FilterByBrand from "./FilterByBrand";
+import "../../stylesheets/Main.scss";
 
 function Filters(props) {
   const handleSubmit = (ev) => {
@@ -14,6 +15,11 @@ function Filters(props) {
     <form onSubmit={handleSubmit} className="main__form">
       <FilterByName handleFilter={props.handleFilter} name={props.name} />
       <FilterByColor handleFilter={props.handleFilter} color={props.color} />
+      <FilterByBrand
+        handleFilter={props.handleFilter}
+        getBrands={props.getBrands}
+        brand={props.brand}
+      />
       <input
         type="button"
         value="Reset"

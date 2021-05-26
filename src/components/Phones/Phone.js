@@ -7,7 +7,7 @@ function Phone(props) {
       <h3 className="phone__title">{props.item.name}</h3>
       <img
         className="phone__img"
-        src={require(`../images/catalog/${props.item.image}`).default}
+        src={require(`../../images/catalog/${props.item.image}`).default}
         alt={props.item.name}
       />
       <div className="phone__container">

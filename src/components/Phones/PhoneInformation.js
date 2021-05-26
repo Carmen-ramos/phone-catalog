@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../stylesheets/PhoneInformation.scss";
+import "../../stylesheets/PhoneInformation.scss";
 
 function PhoneInformation(props) {
   console.log(props);
@@ -14,12 +14,12 @@ function PhoneInformation(props) {
       <h2 className="phoneInf__title">{props.phone.name}</h2>
       <img
         className="phoneInf__img"
-        src={require(`../images/catalog/${props.phone.image}`).default}
+        src={require(`../../images/catalog/${props.phone.image}`).default}
         alt={props.phone.name}
       />
       <p className="phoneInf__paragraph">
         Brand:
-        <spa className="phoneInf__description">{props.phone.manufacturer}</spa>
+        <spa className="phoneInf__description">{props.phone.brand}</spa>
       </p>
       <p className="phoneInf__paragraph">
         Description:
