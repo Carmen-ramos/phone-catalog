@@ -7,7 +7,7 @@ function FilterByColor(props) {
   };
 
   return (
-    <label htmlFor="color" className="main__form--input">
+    <label htmlFor="color" className="main__form--input stylelabel">
       Color:{" "}
       <select
         name="color"

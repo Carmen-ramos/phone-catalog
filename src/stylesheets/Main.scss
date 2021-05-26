@@ -14,7 +14,7 @@
     color: $textcolor2;
     background-color: $maincolor;
     @include tablet {
-      padding: rem(40);
+      padding: rem(25);
       flex-direction: row;
       justify-content: space-around;
     }
@@ -55,5 +55,26 @@
       grid-template-columns: repeat(3, 1fr);
       margin-bottom: rem(30);
     }
+  }
+}
+.stylelabel {
+  color: $secondcolor;
+  font-weight: bold;
+}
+.containerCheck {
+  padding: rem(5);
+  display: grid;
+  justify-items: center;
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__title {
+    padding: rem(4);
+    @include desktop {
+      margin: rem(6);
+    }
+  }
+  &__box {
+    margin-right: rem(5);
   }
 }

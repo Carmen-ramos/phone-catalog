@@ -7,7 +7,7 @@ function FilterByName(props) {
   };
 
   return (
-    <label htmlFor="name" id="name" className="main__form--input">
+    <label htmlFor="name" id="name" className="main__form--input stylelabel">
       Search:{" "}
       <input
         type="text"

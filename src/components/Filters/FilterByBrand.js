@@ -1,3 +1,5 @@
+import "../../stylesheets/Main.scss";
+
 function FilterByBrand(props) {
   const handleChange = (e) => {
     props.handleFilter({
@@ -8,9 +10,9 @@ function FilterByBrand(props) {
 
   const brandsList = props.getBrands.map((brand, i) => {
     return (
-      <label key={i}>
+      <label key={i} className="containerCheck__title">
         <input
-          className="checkbox"
+          className="containerCheck__box"
           type="checkbox"
           name="brand"
           value={brand}
@@ -23,10 +25,10 @@ function FilterByBrand(props) {
   });
   return (
     <>
-      <label htmlFor="origin" className="main__form--check stylelabel">
+      <label htmlFor="brand" className="main__form--input stylelabel">
         Brand:
       </label>
-      {brandsList}
+      <div className="containerCheck">{brandsList}</div>
     </>
   );
 }
